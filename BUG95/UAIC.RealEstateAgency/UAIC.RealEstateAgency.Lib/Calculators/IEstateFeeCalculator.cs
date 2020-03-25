@@ -5,16 +5,4 @@
         decimal CalculateEstatePrice(decimal base_price);
         decimal GetEstateCommission(decimal base_price);
     }
-
-
-
-
-
-
-
-
-
-
-
-
 }
