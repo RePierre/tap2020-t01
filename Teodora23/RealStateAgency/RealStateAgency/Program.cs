@@ -1,4 +1,5 @@
 ﻿using System;
+using RealEstateAgency.Core;
 
 namespace RealStateAgency
 {
@@ -6,34 +7,11 @@ namespace RealStateAgency
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter Property Type: ");
-            var propertyType = Console.ReadLine();
-
-            Console.WriteLine("Enter Initial Selling Price: ");
-
-            Property property;
-            decimal propertyPrice;
-
-            switch (propertyType)
-            {
-                case "Apartment":
-                    propertyPrice = Convert.ToDecimal(Console.ReadLine());
-                    property = new Apartment(propertyPrice);
-                    Console.WriteLine("The final price is " + property.PropertySellingPrice + " from which the applied commission is " + property.Commission + ".");
-                    break;
-                case "Single Room":
-                    propertyPrice = Convert.ToDecimal(Console.ReadLine());
-                    property = new SingleRoom(propertyPrice);
-                    Console.WriteLine("The final price is " + property.PropertySellingPrice + " from which the applied commission is " + property.Commission + ".");
-                    break;
-                case "House":
-                    propertyPrice = Convert.ToDecimal(Console.ReadLine());
-                    property = new House(propertyPrice);
-                    Console.WriteLine("The final price is " + property.PropertySellingPrice + " from which the applied commission is " + property.Commission + ".");
-                    break;
-                default:
-                    throw new InvalidOperationException("This type does not exist!");
-            }
+            var commission = new Commission();
+            var property = new House();
+            property.Price = 100m;
+            var sellingPrice = property.Price + commission.CalculateCommission(property);
+            Console.WriteLine(sellingPrice);
 
         }
     }
