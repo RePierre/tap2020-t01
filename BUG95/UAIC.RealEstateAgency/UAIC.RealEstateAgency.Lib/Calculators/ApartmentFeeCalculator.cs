@@ -7,16 +7,4 @@
             return base_price * 0.2m;
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
 }
