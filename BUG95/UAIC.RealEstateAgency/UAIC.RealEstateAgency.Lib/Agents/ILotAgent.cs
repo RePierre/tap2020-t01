@@ -6,16 +6,4 @@ namespace UAIC.RealEstateAgency.Agents
     {
         int GetCadastralNumber(Lot lot);
     }
-
-
-
-
-
-
-
-
-
-
-
-
 }
