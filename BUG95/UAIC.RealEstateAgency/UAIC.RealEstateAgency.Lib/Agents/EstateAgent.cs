@@ -14,16 +14,4 @@ namespace UAIC.RealEstateAgency.Agents
             return estate.type;
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
 }
