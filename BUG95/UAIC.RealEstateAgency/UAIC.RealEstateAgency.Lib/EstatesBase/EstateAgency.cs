@@ -12,16 +12,4 @@
         }
         public decimal Base_price { get => base_price; private set { } }
     }
-
-
-
-
-
-
-
-
-
-
-
-
 }

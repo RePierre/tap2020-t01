@@ -6,16 +6,4 @@ namespace UAIC.RealEstateAgency.Estates
     {
         public Apartment(decimal base_price) : base("Apartment", base_price) { }
     }
-
-
-
-
-
-
-
-
-
-
-
-
 }

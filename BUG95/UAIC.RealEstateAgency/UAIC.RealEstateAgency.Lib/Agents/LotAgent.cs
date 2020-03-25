@@ -9,16 +9,4 @@ namespace UAIC.RealEstateAgency.Agents
             return lot.cadastralNumber;
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
 }

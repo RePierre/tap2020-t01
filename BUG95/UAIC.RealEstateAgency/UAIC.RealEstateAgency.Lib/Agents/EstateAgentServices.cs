@@ -27,5 +27,3 @@ namespace UAIC.RealEstateAgency.Agents
         }
     }
 }
-
-

@@ -9,16 +9,4 @@
             this.cadastralNumber = cadastralNumber;
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
 }
