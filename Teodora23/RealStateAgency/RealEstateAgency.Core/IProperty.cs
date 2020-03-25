@@ -6,6 +6,6 @@ namespace RealEstateAgency.Core
 {
     interface IProperty : IAsset
     {
-        string Adress { get; set; }
+        string Adress { get; }
     }
 }

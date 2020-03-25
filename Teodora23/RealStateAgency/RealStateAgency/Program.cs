@@ -9,7 +9,6 @@ namespace RealStateAgency
         {
             var commission = new Commission();
             var property = new House();
-            property.Price = 100m;
             var sellingPrice = property.Price + commission.CalculateCommission(property);
             Console.WriteLine(sellingPrice);
 

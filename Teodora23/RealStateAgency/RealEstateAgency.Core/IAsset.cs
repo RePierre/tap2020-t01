@@ -4,7 +4,7 @@ namespace RealEstateAgency.Core
 {
     public interface IAsset
     {
-        decimal Price { get; set; }
-        decimal Commission { get; set; }
+        decimal Price { get; }
+        decimal Commission { get; }
     }
 }

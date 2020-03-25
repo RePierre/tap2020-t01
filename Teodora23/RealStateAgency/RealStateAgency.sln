@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealStateAgency", "RealStateAgency\RealStateAgency.csproj", "{0EEF2CE8-F549-41B3-A946-80B220662080}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstateAgency", "RealStateAgency\RealEstateAgency.csproj", "{0EEF2CE8-F549-41B3-A946-80B220662080}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstateAgency.Core", "RealEstateAgency.Core\RealEstateAgency.Core.csproj", "{0C90851C-5840-4E65-91CA-88BE7EED3A36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstateAgency.Core", "RealEstateAgency.Core\RealEstateAgency.Core.csproj", "{0C90851C-5840-4E65-91CA-88BE7EED3A36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
