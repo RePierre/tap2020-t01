@@ -4,15 +4,11 @@ using System.Text;
 
 namespace RealEstateAgency.Core
 {
-    class Apartment : IProperty
+    public class Apartment : Property
     {
-        public string Adress { get; protected set; }
-        public decimal Price { get; protected set; }
-        public decimal Commission { get; protected set; }
-
         public Apartment()
         {
-            this.Commission = 5 / 100m;
+            this.CommissionRate = 3m;
         }
     }
 }

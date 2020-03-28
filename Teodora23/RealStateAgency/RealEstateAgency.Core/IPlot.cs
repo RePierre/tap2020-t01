@@ -4,11 +4,8 @@ using System.Text;
 
 namespace RealEstateAgency.Core
 {
-    public class House : Property
+    interface IPlot : IAsset
     {
-        public House()
-        {
-            this.CommissionRate = 3m;
-        }
+        string CadastralReference { get; set; }
     }
 }
