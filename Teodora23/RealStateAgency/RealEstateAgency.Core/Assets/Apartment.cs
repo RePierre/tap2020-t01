@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using RealEstateAgency.Core.Assets.Base;
 
-namespace RealEstateAgency.Core
+namespace RealEstateAgency.Core.Assets
 {
-    public class House : Property
+    public class Apartment : Property
     {
-        public House()
+        public Apartment()
         {
             this.CommissionRate = 3m;
         }
