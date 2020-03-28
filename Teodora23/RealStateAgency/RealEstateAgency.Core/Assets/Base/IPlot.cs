@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RealEstateAgency.Core
+namespace RealEstateAgency.Core.Assets.Base
 {
     interface IPlot : IAsset
     {
