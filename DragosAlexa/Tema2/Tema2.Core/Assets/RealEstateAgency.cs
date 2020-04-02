@@ -1,4 +1,4 @@
-﻿namespace Tema2
+﻿namespace Uaic.Tema2.Core.Assets
 {
     public abstract class RealEstateAgency {
         public decimal price;
