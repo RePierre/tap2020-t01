@@ -1,6 +1,6 @@
 ﻿namespace Tema2
 {
-   abstract class TotalPriceCalculator
+    abstract class TotalPriceCalculator : ITotalPriceCalculator
     {
         public abstract decimal CalculateTotalPrice(RealEstateAgency rea, decimal price);
     }
