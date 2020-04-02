@@ -1,5 +1,0 @@
-2.9*Copou
-2.8*Tudor Vladimirescu
-1.7*Targu Cucu
-2.9*Palas
-1.1*Pacurari
