@@ -5,7 +5,7 @@ using Tema2.Core.Estates;
 
 namespace Tema2.Core.Prices
 {
-    class SingleRoomBasePrice : BasePrice
+    public class SingleRoomBasePrice : BasePrice
     {
         public override decimal GetInitialPrice(Estate estate)
         {

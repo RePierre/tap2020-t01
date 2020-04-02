@@ -6,7 +6,7 @@ using Tema2.Core.Calculator;
 
 namespace Tema2.Core.Prices
 {
-    class Prices
+    public class Prices
     {
         public static void GetLocation(Estate estate, String location)
         {

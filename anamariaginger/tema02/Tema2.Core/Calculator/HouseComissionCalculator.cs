@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Tema2.Core.Calculator
 {
-    class HouseComissionCalculator:ComissionCalculator
+       public class HouseComissionCalculator:ComissionCalculator
     {
         public override decimal CalculateComission(decimal amount)
         {

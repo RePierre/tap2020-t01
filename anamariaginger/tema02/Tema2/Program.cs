@@ -1,4 +1,5 @@
 ﻿using System;
+using Tema2.Core;
 using Tema2.Core.Estates;
 using Tema2.Core.Prices;
 using Tema2.Core.Calculator;
