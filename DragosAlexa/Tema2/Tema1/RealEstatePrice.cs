@@ -1,5 +1,6 @@
 ﻿using System;
-
+using Uaic.Tema2.Core.Assets;
+using Uaic.Tema2.Core.Calculators;
 
 namespace Tema2
 {

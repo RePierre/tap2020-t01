@@ -1,6 +1,7 @@
-﻿namespace Tema2
+﻿using Uaic.Tema2.Core.Assets;
+namespace Uaic.Tema2.Core.Calculators
 {
-    class HouseTotalPriceCalculator : TotalPriceCalculator
+    public class HouseTotalPriceCalculator : TotalPriceCalculator
     {
         public override decimal CalculateTotalPrice(RealEstateAgency rea, decimal price)
         {

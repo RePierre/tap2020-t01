@@ -1,6 +1,8 @@
 ﻿using System;
+using Uaic.Tema2.Core;
 
-namespace Tema2
+
+namespace Uaic.Tema2.Core.Assets
 {
     public class Apartment : RealEstateAgency
     {

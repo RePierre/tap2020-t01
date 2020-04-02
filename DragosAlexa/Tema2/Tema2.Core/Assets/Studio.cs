@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Tema2
+namespace Uaic.Tema2.Core.Assets
 {
     public class Studio : RealEstateAgency
     {
