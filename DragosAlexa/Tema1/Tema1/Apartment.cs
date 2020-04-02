@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace Tema1
+namespace Tema2
 {
     public class Apartment : RealEstateAgency {
-        public Apartment(decimal price, int surface, int yearBuilt) : base(price, surface, yearBuilt) { }
+        public Apartment(decimal price, double surface, int yearBuilt,string address) : base(price, surface, yearBuilt,address) { }
         public override decimal calculate_commission()
         {
             if (yearBuilt < 1990)
