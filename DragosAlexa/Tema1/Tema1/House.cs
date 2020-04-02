@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace Tema1
+namespace Tema2
 {
     public class House : RealEstateAgency
     {
         public int floors;
-        public House(decimal price, int surface, int yearBuilt,int floors) : base(price, surface, yearBuilt) {
+        public House(decimal price,double surface, int yearBuilt,string address,int floors) : base(price, surface, yearBuilt,address) {
             this.floors = floors;
         }
         public override decimal calculate_commission()
@@ -23,7 +23,7 @@ namespace Tema1
                 }
                 else
                 {
-                    if (surface < 30 || surface > 90)
+                    if (surface < 50 || surface > 350)
                         throw new Exception("No houses with this surface!Please introduce a valid value for surface(50-350 square meters).");
                     else if (surface <= 150)
                         return price * 0.015m;
@@ -40,7 +40,7 @@ namespace Tema1
                 }
                 else
                 {
-                    if (surface < 30 || surface > 90)
+                    if (surface < 50 || surface > 350)
                         throw new Exception("No houses with this surface!Please introduce a valid value for surface(50-350 square meters).");
                     else if (surface <= 150)
                         return price * 0.025m;
