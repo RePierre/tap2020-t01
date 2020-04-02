@@ -2,16 +2,14 @@
 
 namespace Tema2
 {
-    class CommissionCalculator {
-        public decimal CalculateCommission(RealEstateAgency rea, decimal price) {
-            var commission =GetCommission(rea);
-            return price * commission;
-        }
-        public decimal CalculateTotalPrice(RealEstateAgency rea, decimal price) {
-            return price + price * GetCommission(rea);
-        }
+    abstract class CommissionCalculator
+    {
+        public abstract decimal CalculateCommission(RealEstateAgency rea, decimal price);
 
-        public decimal GetCommission(RealEstateAgency rea) {
+    }
+}
+
+        /*public decimal GetCommission(RealEstateAgency rea) {
             if (rea is Studio) {
                 if (rea.yearBuilt < 1990)
                 {
@@ -27,7 +25,7 @@ namespace Tema2
                     else if (rea.surface <= 30)
                         return 0.012m;
                 }
-                return 0m;
+                throw new InvalidOperationException("Please verify year of construction of the studio!");
             }
             if (rea is Apartment) {
                 if (rea.yearBuilt < 1990)
@@ -44,7 +42,7 @@ namespace Tema2
                     else if (rea.surface <= 60)
                         return 0.02m;
                 }
-                return 0m;
+                throw new InvalidOperationException("Please verify year of construction of the apartment!");
             }
             if (rea is House) {
                 if (rea.floors < 1 || rea.floors > 3)
@@ -111,7 +109,7 @@ namespace Tema2
         }
     }
 
-}
+}*/
 
 
 
