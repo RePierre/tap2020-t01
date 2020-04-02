@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tema2", "tema2\tema2.csproj", "{2109253C-726A-4DEC-A887-A4FE3BD00639}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tema2", "tema2\tema2.csproj", "{2109253C-726A-4DEC-A887-A4FE3BD00639}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tema2.Core", "tema2.Core\tema2.Core.csproj", "{199FCDE6-7DFD-4DCF-9B62-912AF572B573}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2109253C-726A-4DEC-A887-A4FE3BD00639}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2109253C-726A-4DEC-A887-A4FE3BD00639}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2109253C-726A-4DEC-A887-A4FE3BD00639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{199FCDE6-7DFD-4DCF-9B62-912AF572B573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{199FCDE6-7DFD-4DCF-9B62-912AF572B573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{199FCDE6-7DFD-4DCF-9B62-912AF572B573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{199FCDE6-7DFD-4DCF-9B62-912AF572B573}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,8 @@
-﻿namespace tema2
+﻿using System;
+using Uaic.tema2.Core.Assets.Base;
+using Uaic.tema2.Core.Calculators;
+
+namespace Uaic.tema2.Core
 {
     public interface IRealEstateAgency
     {

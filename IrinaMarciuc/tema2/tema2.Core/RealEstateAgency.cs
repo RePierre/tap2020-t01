@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using Uaic.tema2.Core.Assets.Base;
+using Uaic.tema2.Core.Calculators;
 
-namespace tema2
+namespace Uaic.tema2.Core
 {
     public class RealEstateAgency : IRealEstateAgency
     {
@@ -10,7 +10,7 @@ namespace tema2
         {
             var commission = commissionCalculator.GetCommission();
             var totalAmount = commissionCalculator.CalculateCommission(asset, price);
-            Console.WriteLine("{0}, {1}, {2}%, {3}\n", asset.GetType().Name, totalAmount, commission, location);
+            Console.WriteLine("Asset type: {0}, final price: {1}, commission: {2}%, location/number: {3}\n", asset.GetType().Name, totalAmount, commission, location);
         }
     }
 }
