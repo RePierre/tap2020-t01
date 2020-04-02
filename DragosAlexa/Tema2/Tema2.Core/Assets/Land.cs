@@ -1,4 +1,4 @@
-﻿namespace Tema2
+﻿namespace Uaic.Tema2.Core.Assets
 {
         public class Land : RealEstateAgency
         {

@@ -1,8 +1,9 @@
 ﻿using System;
+using Uaic.Tema2.Core.Assets;
 
-namespace Tema2
+namespace Uaic.Tema2.Core.Calculators
 {
-    class ApartmentCommissionCalculator : CommissionCalculator
+    public class ApartmentCommissionCalculator : CommissionCalculator
     {
         public override decimal CalculateCommission(RealEstateAgency rea, decimal price)
         {

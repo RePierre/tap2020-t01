@@ -1,8 +1,8 @@
 ﻿using System;
-
-namespace Tema2
+using Uaic.Tema2.Core.Assets;
+namespace Uaic.Tema2.Core.Calculators
 {
-    class StudioCommissionCalculator : CommissionCalculator {
+    public class StudioCommissionCalculator : CommissionCalculator {
         public override decimal CalculateCommission(RealEstateAgency rea, decimal price)
         {
             if (rea.yearBuilt < 1990)
