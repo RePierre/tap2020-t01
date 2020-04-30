@@ -1,40 +1,64 @@
 ﻿using System;
+using RealEstateAgency.Core;
+using RealEstateAgency.Core.Assets;
+using RealEstateAgency.Core.Assets.Base;
+using RealEstateAgency.Core.CommissionCalculator;
 
-namespace RealStateAgency
+namespace RealEstateAgency
 {
-    public class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter Property Type: ");
-            var propertyType = Console.ReadLine();
+            IFrontDesk frontDesk = new FrontDesk();
+            var commissionCalculator = new CommissionCalculator();
 
-            Console.WriteLine("Enter Initial Selling Price: ");
+            Console.WriteLine("Select asset type: \n" +
+                "1. House; \n" +
+                "2. Apartment; \n" +
+                "3. Single Room; \n" +
+                "4. Urban Plot. \n");
 
-            Property property;
-            decimal propertyPrice;
+            var assetType = Console.ReadLine();
 
-            switch (propertyType)
+            IAsset asset;
+            switch (assetType)
             {
-                case "Apartment":
-                    propertyPrice = Convert.ToDecimal(Console.ReadLine());
-                    property = new Apartment(propertyPrice);
-                    Console.WriteLine("The final price is " + property.PropertySellingPrice + " from which the applied commission is " + property.Commission + ".");
+                case "1":
+                    asset = new House();
+                    Console.WriteLine("Insert the address of the House: ");
+                    asset.SetAssetAttribute(Console.ReadLine());
+                    Console.WriteLine("\nInsert the desired price: ");
+                    asset.Price = Convert.ToDecimal(Console.ReadLine());
+                    frontDesk.CalculateSellingPrice(asset, commissionCalculator);
                     break;
-                case "Single Room":
-                    propertyPrice = Convert.ToDecimal(Console.ReadLine());
-                    property = new SingleRoom(propertyPrice);
-                    Console.WriteLine("The final price is " + property.PropertySellingPrice + " from which the applied commission is " + property.Commission + ".");
+                case "2":
+                    asset = new Apartment();
+                    Console.WriteLine("Insert the address of the Apartment: ");
+                    asset.SetAssetAttribute(Console.ReadLine());
+                    Console.WriteLine("\nInsert the desired price: ");
+                    asset.Price = Convert.ToDecimal(Console.ReadLine());
+                    frontDesk.CalculateSellingPrice(asset, commissionCalculator);
                     break;
-                case "House":
-                    propertyPrice = Convert.ToDecimal(Console.ReadLine());
-                    property = new House(propertyPrice);
-                    Console.WriteLine("The final price is " + property.PropertySellingPrice + " from which the applied commission is " + property.Commission + ".");
+                case "3":
+                    asset = new SingleRoom();
+                    Console.WriteLine("Insert the address of the Single Room: ");
+                    asset.SetAssetAttribute(Console.ReadLine());
+                    Console.WriteLine("\nInsert the desired price: ");
+                    asset.Price = Convert.ToDecimal(Console.ReadLine());
+                    frontDesk.CalculateSellingPrice(asset, commissionCalculator);
+                    break;
+                case "4":
+                    asset = new UrbanPlot();
+                    Console.WriteLine("Insert the Cadastral Reference of the Urban Plot: ");
+                    asset.SetAssetAttribute(Console.ReadLine());
+                    Console.WriteLine("\nInsert the desired price: ");
+                    asset.Price = Convert.ToDecimal(Console.ReadLine());
+                    frontDesk.CalculateSellingPrice(asset, commissionCalculator);
                     break;
                 default:
-                    throw new InvalidOperationException("This type does not exist!");
+                    break;
             }
-
         }
     }
 }
