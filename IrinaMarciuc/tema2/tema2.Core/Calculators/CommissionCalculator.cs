@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Uaic.tema2.Core.Assets.Base;
 
-namespace tema2
+namespace Uaic.tema2.Core.Calculators
 {
     public abstract class CommissionCalculator : ICommissionCalculator
     {

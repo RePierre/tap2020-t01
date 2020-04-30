@@ -1,4 +1,4 @@
-﻿namespace tema2
+﻿namespace Uaic.tema2.Core.Assets.Base
 {
     public interface IAsset
     {
